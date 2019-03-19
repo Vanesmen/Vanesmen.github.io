@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dama</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper" id="wrapper">
+
+    <div class="header">
+      <div class="center flex">
+        <a class="logo" href="#wrapper">
+          <img src="img/logo.png" alt="Logo">
+        </a>
+        <nav class="nav">
+          <a class="nav__link" href="#sale">Sale of the day </a>
+          <a class="nav__link" href="#popular">popular product</a>
+          <a class="nav__link" href="#black-section">this weeks hot deals</a>
+          <a class="nav__link" href="#order">other products</a>
+        </nav>
+        <div class="menu-toggle">
+          <span class="menu-toggle__span"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-slider">
+      <div class="center">
+        <ul class="slider-list">
+          <li class="slider-list__item">
+            <img class="slider-image" src="img/slide-img1.png" alt="Slide">
+            <div class="slider-content">
+              <h3 class="slider-content__title">Headphone</h3>
+              <p class="slider-content__text">of the printing and typesetting industry</p>
+              <div class="slider-content__price">189 usd</div>
+              <a data-title="Headphone" data-category="Headphone" data-desc="of the printing and typesetting industry" data-price="$450" data-img="img/slide-img1.png" class="slider-content__button open-popup" href="#">Buy now
+                <i class="slider-content__icon"></i>
+              </a>
+            </div>
+          </li>
+
+          <li class="slider-list__item">
+            <img class="slider-image" src="img/slide-img2.png" alt="Slide">
+            <div class="slider-content">
+              <h3 class="slider-content__title">Beats by Dr. Dre</h3>
+              <p class="slider-content__text">of the printing and typesetting industry</p>
+              <div class="slider-content__price">400 usd</div>
+              <a data-title="Beats by Dr. Dre" data-category="Headphone" data-desc="of the printing and typesetting industry" data-price="$450" data-img="img/slide-img2.png" class="slider-content__button open-popup" href="#">Buy now
+                <i class="slider-content__icon"></i>
+              </a>
+            </div>
+          </li>
+
+          <li class="slider-list__item">
+            <img class="slider-image" src="img/slide-img3.png" alt="Slide">
+            <div class="slider-content">
+              <h3 class="slider-content__title">Monster Beats</h3>
+              <p class="slider-content__text">of the printing and typesetting industry</p>
+              <div class="slider-content__price">300 usd</div>
+              <a data-title="Monster Beats" data-category="Headphone" data-desc="of the printing and typesetting industry" data-price="$450" data-img="img/slide-img3.png" class="slider-content__button open-popup" href="#">Buy now
+                <i class="slider-content__icon"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <div class="slider-count">
+            <span class="slider-count__span"></span>/<ins class="slider-count__ins"></ins>
+          </div>
+          <div class="slider-paginations"></div>
+          <div class="slider-buttons">
+            <button class="slider-buttons__button slider-buttons__button--prev"></button>
+            <button class="slider-buttons__button slider-buttons__button--next"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sale" id="sale">
+      <div class="center">
+        <h2 class="title">
+          <span class="letter-color">s</span>ale of the day
+        </h2>
+
+        <div class="sale-block">
+          <div class="sale-left">
+            <img class="sale-image" src="img/img1.png" alt="Smarthone">
+
+            <div class="counter-sale">
+              <div class="counter-title">
+                <span class="counter-title__span">iphone 6s silver-64gb</span>
+                <p class="counter-title__text">sale:&nbsp;off:&nbsp;
+                  <ins class="counter-title__price">$250/00</ins>-370/00
+                </p>
+              </div>
+              <div class="counter-description">lorem Ipsum is simpty dummy text of the</div>
+              <div class="count-container">
+                <div class="countdown countdown-container container">
+                  <div class="clock row">
+                    <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                      <div class="wrap">
+                        <div class="inner">
+                          <div id="canvas-days" class="clock-canvas clock-item__canvas"></div>
+  
+                          <div class="text">
+                            <p class="val text__value">0</p>
+                            <p class="type-days type-time text__time">DAYS</p>
+                          </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                      </div><!-- /.wrap -->
+                    </div><!-- /.clock-item -->
+  
+                    <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                      <div class="wrap">
+                        <div class="inner">
+                          <div id="canvas-hours" class="clock-canvas clock-item__canvas"></div>
+  
+                          <div class="text">
+                            <p class="val text__value">0</p>
+                            <p class="type-hours type-time text__time">HOURS</p>
+                          </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                      </div><!-- /.wrap -->
+                    </div><!-- /.clock-item -->
+  
+                    <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                      <div class="wrap">
+                        <div class="inner">
+                          <div id="canvas-minutes" class="clock-canvas clock-item__canvas"></div>
+  
+                          <div class="text">
+                            <p class="val text__value">0</p>
+                            <p class="type-minutes type-time text__time">MINS</p>
+                          </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                      </div><!-- /.wrap -->
+                    </div><!-- /.clock-item -->
+  
+                    <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                      <div class="wrap">
+                        <div class="inner">
+                          <div id="canvas-seconds" class="clock-canvas clock-item__canvas"></div>
+  
+                          <div class="text">
+                            <p class="val text__value">0</p>
+                            <p class="type-seconds type-time text__time">SECS</p>
+                          </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                      </div><!-- /.wrap -->
+                    </div><!-- /.clock-item -->
+                  </div><!-- /.clock -->
+                </div><!-- /.countdown-wrapper -->
+              </div>
+            </div>
+
+            <div class="actions-icons">
+              <a class="actions-icons__link" href="#">
+                <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+              </a>
+              <a class="actions-icons__link" href="#">
+                <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+              </a>
+              <a data-title="Smarthone" data-category="Smarthone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/img1.png" class="actions-icons__link open-popup" href="#">
+                <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+              </a>
+            </div>
+          </div>
+
+          <div class="sale-right">
+
+            <ul class="list">
+              <li class="list-item sale-item">
+                <div class="category">Watch</div>
+
+                <div class="sale-item__title">Apple Watch Sport Green</div>
+
+                <div class="sale-item__price">price 
+                  <span class="sale-item__price-span">$400.00</span>
+                </div>
+
+                <div class="sale-item__img">
+                  <img class="sale-item__goods-img" src="img/goods1.jpg" alt="Apple Watch Sport Green">
+                </div>
+
+                <div class="actions-icons">
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods1.jpg" class="actions-icons__link actions-icons__link--animation open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </li>
+
+              <li class="list-item sale-item">
+                <div class="category">Headphone</div>
+
+                <div class="sale-item__title">Beat Beautiful</div>
+
+                <div class="sale-item__price">price 
+                  <span class="sale-item__price-span">$400.00</span>
+                </div>
+
+                <div class="sale-item__img">
+                  <img class="sale-item__goods-img" src="img/goods2.jpg" alt="Beat Beautiful">
+                </div>
+
+                <div class="actions-icons">
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods2.jpg" class="actions-icons__link actions-icons__link--animation open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </li>
+
+              <li class="list-item sale-item">
+                <div class="category">Headphone</div>
+
+                <div class="sale-item__title">Beat Phone VIP</div>
+
+                <div class="sale-item__price">price 
+                  <span class="sale-item__price-span">$450.00</span>
+                </div>
+
+                <div class="sale-item__img">
+                  <img class="sale-item__goods-img" src="img/goods3.jpg" alt="Beat Phone VIP">
+                </div>
+
+                <div class="actions-icons">
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods3.jpg" class="actions-icons__link actions-icons__link--animation open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </li>
+
+              <li class="list-item sale-item">
+                <div class="category">Headphone</div>
+
+                <div class="sale-item__title">Beat Studio Wireless</div>
+
+                <div class="sale-item__price">price 
+                  <span class="sale-item__price-span">$250.00</span>
+                </div>
+
+                <div class="sale-item__img">
+                  <img class="sale-item__goods-img" src="img/goods4.jpg" alt="Beat Studio Wireless">
+                </div>
+
+                <div class="actions-icons">
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link actions-icons__link--animation" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods4.jpg" class="actions-icons__link actions-icons__link--animation open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section class="popular" id="popular">
+      <div class="center">
+        <h2 class="title"><span class="letter-color">p</span>opular product</h2>
+
+        <div class="tabs">
+          <a class="tabs__link" href="#">
+            <img src="img/tabs-icon1.png" alt="Headphones icon">
+          </a>
+          <a class="tabs__link" href="#">
+            <img src="img/tabs-icon2.png" alt="Watch icon">
+          </a>
+          <a class="tabs__link" href="#">
+            <img src="img/tabs-icon3.png" alt="Smartphone icon">
+          </a>
+          <a class="tabs__link" href="">
+            <img src="img/tabs-icon4.png" alt="Joystick icon">
+          </a>
+          <a class="tabs__link" href="#">
+            <img src="img/tabs-icon5.png" alt="Laptop icon">
+          </a>
+          <a class="tabs__link" href="#">
+            <img src="img/tabs-icon6.png" alt="Desktop icon">
+          </a>
+        </div>
+
+        <div class="tabs-blocks">
+
+          <ul class="list">
+            <li class="list-item popular-item">
+              <div class="popular-item__left">
+                <div class="popular-item__block">
+                  <div class="popular-item__gallery">
+                    <img class="popular-item__img" src="img/goods5.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods6.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods7.jpg" alt="Apple watch">
+                  </div>
+
+                  <div class="popular-prev">
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods5.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods6.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods7.jpg" alt="Apple watch">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item__right">
+                <div class="popular-item__title">Apple Watch Sport Green</div>
+
+                <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+                </div>
+
+                <div class="popular-character">
+                  <span class="popular-character__span">Windows 10</span>
+                  <span class="popular-character__span">Intel Quad Core Processors</span>
+                  <span class="popular-character__span">NVIDIA GeForce GTX 950M Graphics Card</span>
+                </div>
+
+                <div class="actions-icons actions-icons--helper">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods5.jpg" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods6.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Apple Watch Sport Green</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods6.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Beautiful" data-category="Beat Beautiful" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods7.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Beautiful</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods7.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="BOSS HUGO BOSS Quartz" data-category="BOSS HUGO BOSS Quartz" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods8.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">BOSS HUGO BOSS Quartz</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods8.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Canon EOS 1200D" data-category="Canon EOS 1200D" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods9.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Canon EOS 1200D</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$250.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods9.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Phone VIP" data-category="Beat Phone VIP" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods10.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Phone VIP</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods10.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Studio Wireless" data-category="Beat Studio Wireless" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods11.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Studio Wireless</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods11.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+          </ul>
+
+          <ul class="list">
+            <li class="list-item popular-item">
+              <div class="popular-item__left">
+                <div class="popular-item__block">
+                  <div class="popular-item__gallery">
+                    <img class="popular-item__img" src="img/goods7.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods6.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods5.jpg" alt="Apple watch">
+                  </div>
+
+                  <div class="popular-prev">
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods7.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods6.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods5.jpg" alt="Apple watch">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item__right">
+                <div class="popular-item__title">Apple Watch Sport Green</div>
+
+                <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+                </div>
+
+                <div class="popular-character">
+                  <span class="popular-character__span">Windows 10</span>
+                  <span class="popular-character__span">Intel Quad Core Processors</span>
+                  <span class="popular-character__span">NVIDIA GeForce GTX 950M Graphics Card</span>
+                </div>
+
+                <div class="actions-icons actions-icons--helper">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods7.jpg" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods11.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Apple Watch Sport Green</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods11.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Beautiful" data-category="Beat Beautiful" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods10.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Beautiful</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods10.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="BOSS HUGO BOSS Quartz" data-category="BOSS HUGO BOSS Quartz" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods9.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">BOSS HUGO BOSS Quartz</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods9.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Canon EOS 1200D" data-category="Canon EOS 1200D" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods8.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Canon EOS 1200D</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$250.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods8.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Phone VIP" data-category="Beat Phone VIP" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods7.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Phone VIP</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods7.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Studio Wireless" data-category="Beat Studio Wireless" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods6.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Studio Wireless</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods6.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+          </ul>
+
+          <ul class="list">
+            <li class="list-item popular-item">
+              <div class="popular-item__left">
+                <div class="popular-item__block">
+                  <div class="popular-item__gallery">
+                    <img class="popular-item__img" src="img/goods6.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods5.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods7.jpg" alt="Apple watch">
+                  </div>
+
+                  <div class="popular-prev">
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods6.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods5.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods7.jpg" alt="Apple watch">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item__right">
+                <div class="popular-item__title">Apple Watch Sport Green</div>
+
+                <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+                </div>
+
+                <div class="popular-character">
+                  <span class="popular-character__span">Windows 10</span>
+                  <span class="popular-character__span">Intel Quad Core Processors</span>
+                  <span class="popular-character__span">NVIDIA GeForce GTX 950M Graphics Card</span>
+                </div>
+
+                <div class="actions-icons actions-icons--helper">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods6.jpg" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods5.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Apple Watch Sport Green</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods5.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Beautiful" data-category="Beat Beautiful" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods8.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Beautiful</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods8.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="BOSS HUGO BOSS Quartz" data-category="BOSS HUGO BOSS Quartz" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods10.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">BOSS HUGO BOSS Quartz</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods10.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Canon EOS 1200D" data-category="Canon EOS 1200D" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods7.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Canon EOS 1200D</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$250.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods7.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Phone VIP" data-category="Beat Phone VIP" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods9.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Phone VIP</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods9.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Studio Wireless" data-category="Beat Studio Wireless" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods6.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Studio Wireless</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods6.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+          </ul>
+
+          <ul class="list">
+            <li class="list-item popular-item">
+              <div class="popular-item__left">
+                <div class="popular-item__block">
+                  <div class="popular-item__gallery">
+                    <img class="popular-item__img" src="img/goods7.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods5.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods6.jpg" alt="Apple watch">
+                  </div>
+
+                  <div class="popular-prev">
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods7.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods5.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods6.jpg" alt="Apple watch">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item__right">
+                <div class="popular-item__title">Apple Watch Sport Green</div>
+
+                <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+                </div>
+
+                <div class="popular-character">
+                  <span class="popular-character__span">Windows 10</span>
+                  <span class="popular-character__span">Intel Quad Core Processors</span>
+                  <span class="popular-character__span">NVIDIA GeForce GTX 950M Graphics Card</span>
+                </div>
+
+                <div class="actions-icons actions-icons--helper">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods7.jpg" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods8.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Apple Watch Sport Green</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods8.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Beautiful" data-category="Beat Beautiful" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods9.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Beautiful</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods9.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="BOSS HUGO BOSS Quartz" data-category="BOSS HUGO BOSS Quartz" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods11.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">BOSS HUGO BOSS Quartz</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods11.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Canon EOS 1200D" data-category="Canon EOS 1200D" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods10.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Canon EOS 1200D</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$250.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods10.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Phone VIP" data-category="Beat Phone VIP" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods7.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Phone VIP</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods7.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Studio Wireless" data-category="Beat Studio Wireless" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods6.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Studio Wireless</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods6.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+          </ul>
+
+          <ul class="list">
+            <li class="list-item popular-item">
+              <div class="popular-item__left">
+                <div class="popular-item__block">
+                  <div class="popular-item__gallery">
+                    <img class="popular-item__img" src="img/goods2.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods1.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods3.jpg" alt="Apple watch">
+                  </div>
+
+                  <div class="popular-prev">
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods2.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods1.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods3.jpg" alt="Apple watch">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item__right">
+                <div class="popular-item__title">Apple Watch Sport Green</div>
+
+                <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+                </div>
+
+                <div class="popular-character">
+                  <span class="popular-character__span">Windows 10</span>
+                  <span class="popular-character__span">Intel Quad Core Processors</span>
+                  <span class="popular-character__span">NVIDIA GeForce GTX 950M Graphics Card</span>
+                </div>
+
+                <div class="actions-icons actions-icons--helper">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods2.jpg" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods3.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Apple Watch Sport Green</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods3.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Beautiful" data-category="Beat Beautiful" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods1.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Beautiful</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods1.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="BOSS HUGO BOSS Quartz" data-category="BOSS HUGO BOSS Quartz" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods4.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">BOSS HUGO BOSS Quartz</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods4.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Canon EOS 1200D" data-category="Canon EOS 1200D" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods6.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Canon EOS 1200D</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$250.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods6.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Phone VIP" data-category="Beat Phone VIP" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods2.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Phone VIP</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods2.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Studio Wireless" data-category="Beat Studio Wireless" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods7.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Studio Wireless</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods7.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+          </ul>
+
+          <ul class="list">
+            <li class="list-item popular-item">
+              <div class="popular-item__left">
+                <div class="popular-item__block">
+                  <div class="popular-item__gallery">
+                    <img class="popular-item__img" src="img/goods3.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods2.jpg" alt="Apple watch">
+                    <img class="popular-item__img" src="img/goods1.jpg" alt="Apple watch">
+                  </div>
+
+                  <div class="popular-prev">
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods3.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods2.jpg" alt="Apple watch">
+                    </span>
+                    <span class="popular-prev__span">
+                      <img class="popular-prev__img" src="img/goods1.jpg" alt="Apple watch">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-item__right">
+                <div class="popular-item__title">Apple Watch Sport Green</div>
+
+                <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+                </div>
+
+                <div class="popular-character">
+                  <span class="popular-character__span">Windows 10</span>
+                  <span class="popular-character__span">Intel Quad Core Processors</span>
+                  <span class="popular-character__span">NVIDIA GeForce GTX 950M Graphics Card</span>
+                </div>
+
+                <div class="actions-icons actions-icons--helper">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods3.jpg" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li data-title="Apple Watch Sport Green" data-category="Apple Watch Sport Green" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods4.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Apple Watch Sport Green</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods4.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Beautiful" data-category="Beat Beautiful" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$400" data-img="img/goods2.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Beautiful</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$400.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods2.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="BOSS HUGO BOSS Quartz" data-category="BOSS HUGO BOSS Quartz" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods7.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">BOSS HUGO BOSS Quartz</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods7.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Canon EOS 1200D" data-category="Canon EOS 1200D" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods1.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Canon EOS 1200D</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$250.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods1.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Phone VIP" data-category="Beat Phone VIP" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods3.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Phone VIP</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods3.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+
+            <li data-title="Beat Studio Wireless" data-category="Beat Studio Wireless" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/goods9.jpg" class="list-item popular-item open-popup">
+              <div class="popular-item__title">Beat Studio Wireless</div>
+
+              <div class="popular-item__price">price 
+                  <span class="popular-item__price-span">$450.00</span>
+              </div>
+
+              <div class="popular-item__img-block">
+                <img class="popular-item__img-good" src="img/goods9.jpg" alt="Apple watch">
+              </div>
+
+              <div class="popular-item__description">Lorem Ipsum is simply dummy the printing and typesetting</div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="black-section" id="black-section">
+      <div class="center">
+        <div class="circle-gradient"></div>
+
+        <div class="carousel">
+          <ul class="carousel-list">
+            <li class="carousel-list__item">
+              <div class="carousel-list__img-block">
+                <img class="carousel-list__img" src="img/goods12.png" alt="Slide image">
+                <img class="carousel-list__img" src="img/goods13.png" alt="Slide image">
+                <img class="carousel-list__img" src="img/goods14.png" alt="Slide image">
+              </div>
+
+              <div class="carousel-list__preview-block">
+                <span class="carousel-list__preview-span">
+                  <img class="carousel-list__preview-img" src="img/goods12.png" alt="Preview image">
+                </span>
+                <span class="carousel-list__preview-span">
+                  <img class="carousel-list__preview-img" src="img/goods13.png" alt="Preview image">
+                </span>
+                <span class="carousel-list__preview-span">
+                  <img class="carousel-list__preview-img" src="img/goods14.png" alt="Preview image">
+                </span>
+              </div>
+            </li>
+
+            <li class="carousel-list__item">
+              <div class="carousel-list__img-block">
+                <img class="carousel-list__img" src="img/goods14.png" alt="Slide image">
+                <img class="carousel-list__img" src="img/goods13.png" alt="Slide image">
+                <img class="carousel-list__img" src="img/goods12.png" alt="Slide image">
+              </div>
+
+              <div class="carousel-list__preview-block">
+                <span class="carousel-list__preview-span">
+                  <img class="carousel-list__preview-img" src="img/goods14.png" alt="Preview image">
+                </span>
+                <span class="carousel-list__preview-span">
+                  <img class="carousel-list__preview-img" src="img/goods13.png" alt="Preview image">
+                </span>
+                <span class="carousel-list__preview-span">
+                  <img class="carousel-list__preview-img" src="img/goods12.png" alt="Preview image">
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          <button class="carousel__btn carousel__btn--prev"></button>
+          <button class="carousel__btn carousel__btn--next"></button>
+        </div>
+        
+        <div class="hot-deals">
+          <h3 class="title hot-deals__title"><span class="letter-color">T</span>HIS WEEK'S HOT DEALS</h3>
+
+          <p class="hot-deals__text">Video game & consoles</p>
+
+          <p class="hot-deals__text">Beats Studio Wireless Over-Ear Black Headphones</p>
+
+          <ul class="hot-deals__list">
+            <li class="hot-deals__list-item">Enjoy the largest library of games, with blockbuster titles</li>
+            <li class="hot-deals__list-item">Flat Folding Headphone Adjustable Headband</li>
+            <li class="hot-deals__list-item">32mm Speakers 1.2m Cable</li>
+          </ul>
+
+          <div class="hot-deals__price">
+            <span class="hot-deals__span">prcie:</span> 
+            <ins class="hot-deals__ins">$250.00</ins> - $380.00
+          </div>
+
+          <div class="actions-icons actions-icons--position">
+              <a class="actions-icons__link" href="#">
+                <img class="actions-icons__img" src="img/social-icon4.svg" alt="Refresh-icon">
+              </a>
+              <a class="actions-icons__link" href="#">
+                <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+              </a>
+              <a class="actions-icons__link" href="#">
+                <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+              </a>
+              <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$250" data-img="img/goods12.png" class="actions-icons__link open-popup" href="#">
+                <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+              </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="order" id="order">
+      <div class="center flex">
+
+        <div class="order-block">          
+          <h3 class="title title--small">
+            <span class="letter-color letter-color--small">F</span>eature product
+          </h3>        
+
+          <ul class="order-list">
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon1.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon1.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon1.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon1.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon1.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon1.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order-block">          
+          <h3 class="title title--small">
+            <span class="letter-color letter-color--small">T</span>op review
+          </h3>        
+
+          <ul class="order-list">
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon4.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon4.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon5.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon5.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon6.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon6.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order-block">          
+          <h3 class="title title--small">
+            <span class="letter-color letter-color--small">P</span>opular
+          </h3>        
+
+          <ul class="order-list">
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon7.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon7.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon8.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon8.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="order-list__item">
+              <div class="order-img-block">
+                <img class="order-img-block__img" src="img/multi-icon9.png" alt="Good icon">
+              </div>
+
+              <div class="order-content">
+                <div class="category">Headphone</div>
+
+                <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+                <div class="order-content__price">price: 
+                  <span class="order-content__span">$450.00</span>
+                </div>
+
+                <div class="actions-icons actions-icons--position">
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon1.svg" alt="Refresh-icon">
+                  </a>
+                  <a class="actions-icons__link" href="#">
+                    <img class="actions-icons__img" src="img/social-icon2.svg" alt="Heart-icon">
+                  </a>
+                  <a data-title="Headphone" data-category="Headphone" data-desc="Lorem Ipsum is simply dummy the printing and typesetting" data-price="$450" data-img="img/multi-icon9.png" class="actions-icons__link open-popup" href="#">
+                    <img class="actions-icons__img" src="img/social-icon3.svg" alt="Basket-icon">
+                  </a>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="brands">
+    <div class="center">
+      <ul class="brands-list">
+        <li class="brands-list__item">
+          <img class="brand-img__picture" src="img/brand-img1.png" alt="Brand image">
+        </li>
+        <li class="brands-list__item">
+          <img class="brand-img__picture" src="img/brand-img2.png" alt="Brand image">
+        </li>
+        <li class="brands-list__item">
+          <img class="brand-img__picture" src="img/brand-img3.png" alt="Brand image">
+        </li>
+        <li class="brands-list__item">
+          <img class="brand-img__picture" src="img/brand-img4.png" alt="Brand image">
+        </li>
+        <li class="brands-list__item">
+          <img class="brand-img__picture" src="img/brand-img5.png" alt="Brand image">
+        </li>
+        <li class="brands-list__item">
+          <img class="brand-img__picture" src="img/brand-img6.png" alt="Brand image">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="center">
+      <div class="footer-content">
+        <div class="footer-content__copy">© COPYRIGHT 2016. POWERED BY SHOPIFY. DAMA</div>
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M308.3 508.5c-2.5.1-4.1.3-5.7.3-34.2 0-68.3-.1-102.5.1-4.8 0-6.1-1.3-6.1-6.1.1-79.6.1-159.3.1-238.9V257H139v-85h5.4c15 0 30-.1 45 .1 3.8 0 4.8-1.1 4.8-4.8-.2-22.3-.2-44.7 0-67 .1-15.6 2.6-30.8 9.8-44.9 10.3-19.9 26.6-32.8 47.2-40.8 16.8-6.6 34.5-9 52.3-9.3 29-.4 58-.2 87-.3 2.7 0 4.9-.1 4.9 3.7-.1 27.5-.1 55-.1 82.5 0 .3-.1.6-.5 1.9h-5.5c-18 0-36-.1-54 0-10.4 0-18.8 4.2-24.1 13.3-1.6 2.7-2.6 6.2-2.6 9.4-.3 17 0 34-.2 51 0 4 1.2 5.1 5.1 5.1 25-.2 50-.1 75-.1h7.3c-3.5 28.6-6.9 56.6-10.4 84.9h-77.1v251.8z"/></svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M4 440.5c55.6 5 105.7-9 151.3-43.2-47.7-4.2-79.6-28-97.4-72.6 15.6 1.9 30.2 2.4 45.7-1.8-51.4-16-78.8-49.6-82.5-103.8 15.4 7.2 29.9 12.4 47 12.6-30.5-22.9-46.1-52.6-45.5-90 .3-17.2 4.9-33.4 14-48.7C93.1 159.1 164 195.7 251.3 201.8c-.5-3.8-.8-6.8-1.2-9.9-7.2-55.4 28.8-105.8 83.8-116.3 34.5-6.6 65 2.5 90.8 26.3 4 3.6 7.4 4.4 12.4 3.1 20.1-5.1 39.2-12.5 57.7-22.5-7.1 23.4-21.7 41-41.5 55.8 4.5-.8 9.1-1.4 13.6-2.3 4.7-1 9.4-2.1 14.1-3.4 4.5-1.2 8.9-2.6 13.3-4.1 4.5-1.5 9-3.2 14.3-4.1-2.6 3.6-5.1 7.4-7.9 10.9-11.6 14.7-25 27.6-39.7 39.1-1.5 1.2-2.8 3.8-2.7 5.6.8 35.5-4.2 70.1-15.7 103.7-22.6 66.2-62 119.8-121.1 158.1-29.2 18.9-61.1 31.3-95.2 38.5-33.8 7.1-67.8 8.4-101.9 4.4-34.2-4-66.7-14.1-97.3-29.9-8.1-4.1-15.9-8.7-23.8-13.1.3-.4.5-.8.7-1.2z"/></svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon socials-list__icon--inst" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M421.981 16.562C410.941 5.519 397.711 0 382.298 0H56.248C40.83 0 27.604 5.521 16.561 16.562 5.52 27.6.001 40.828.001 56.243V382.29c0 15.413 5.518 28.644 16.56 39.683 11.043 11.04 24.272 16.563 39.687 16.563h326.046c15.41 0 28.644-5.523 39.684-16.563 11.043-11.039 16.557-24.27 16.557-39.683V56.243c-.001-15.418-5.514-28.639-16.554-39.681zM157.462 158.025c17.224-16.652 37.924-24.982 62.097-24.982 24.36 0 45.153 8.33 62.381 24.982 17.228 16.655 25.837 36.785 25.837 60.386 0 23.598-8.609 43.729-25.837 60.379-17.228 16.659-38.014 24.988-62.381 24.988-24.172 0-44.87-8.336-62.097-24.988-17.228-16.652-25.841-36.781-25.841-60.379 0-23.601 8.613-43.73 25.841-60.386zm231.403 212.564c0 4.945-1.718 9.083-5.141 12.416-3.433 3.33-7.519 4.996-12.282 4.996h-305.2c-4.948 0-9.091-1.666-12.419-4.996-3.333-3.326-4.998-7.471-4.998-12.416V185.575H89.08c-3.805 11.993-5.708 24.462-5.708 37.402 0 36.553 13.322 67.715 39.969 93.511 26.65 25.786 58.721 38.685 96.217 38.685 24.744 0 47.583-5.903 68.527-17.703 20.937-11.807 37.486-27.839 49.676-48.112 12.183-20.272 18.274-42.4 18.274-66.38 0-12.94-1.91-25.406-5.715-37.402h38.547V370.59h-.002zm0-254.963c0 5.52-1.903 10.184-5.716 13.99-3.805 3.809-8.466 5.711-13.989 5.711h-49.676c-5.517 0-10.185-1.903-13.99-5.711-3.806-3.806-5.708-8.47-5.708-13.99V68.522c0-5.33 1.902-9.945 5.708-13.848 3.806-3.901 8.474-5.854 13.99-5.854h49.676c5.523 0 10.185 1.952 13.989 5.854 3.812 3.903 5.716 8.518 5.716 13.848v47.104z"/></svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#">
+                <svg class="socials-list__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M428.7 69.3c-24.2 24.2-48.3 48.2-71.9 71.8-10.2-6-20.1-12.9-30.9-17.9-41.1-19-82.6-18.9-123.6-.1-38.4 17.7-64.9 47-77.8 87.2-16.2 50.5-7.8 97.6 25.2 139.3 23.9 30.3 55.7 47.9 94 53.3 28.6 4 56.6.9 83.3-9.9 37.6-15.3 61.4-42.7 70.7-82.5.1-.6.1-1.3.2-2.5H264.8v-96.3c2.2-.1 4.3-.3 6.4-.3 73.3 0 146.7.1 220-.2 5.7 0 6.9 2.5 7.7 7 4.2 22.1 5.1 44.3 2.9 66.7-2.6 25.8-7.8 50.9-17.4 75.1-19 48.1-50.2 85.9-94.6 112.5-52.5 31.5-109.5 40.5-169.3 30.3-57.6-9.9-105.9-37.6-144.5-81.5-24.8-28.2-42-60.6-52.1-96.8s-11.8-73-5.7-109.9C25.6 170.2 44 130.5 73.1 96c34.1-40.4 76.7-67.8 127.9-80.7C263.7-.5 324.2 6.1 381.6 36.8c17 9.1 32.7 20 47.1 32.5z"/></svg>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="payments-list">
+          <li class="payments-list__item">
+            <a class="payments-list__link" href="#">
+                <svg class="payments-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.834 47.834"><path d="M19.153 16.799l-2.431 14.266h3.888l2.433-14.266zM13.462 16.815l-3.808 9.729-.406-1.469c-.751-1.77-2.883-4.312-5.386-5.914l3.482 11.897 4.114-.007 6.123-14.239-4.119.003z"/><path d="M7.772 17.836c-.226-.869-.881-1.128-1.694-1.159H.05l-.05.284c4.691 1.138 7.795 3.88 9.083 7.177l-1.311-6.302zM30.923 19.534a7.178 7.178 0 0 1 2.91.546l.351.165.526-3.092c-.77-.289-1.977-.599-3.483-.599-3.842 0-6.55 1.935-6.571 4.708-.025 2.049 1.929 3.193 3.405 3.876 1.515.7 2.023 1.145 2.016 1.77-.012.955-1.208 1.393-2.325 1.393-1.557 0-2.384-.215-3.661-.747l-.501-.228-.547 3.193c.91.399 2.589.742 4.332.76 4.087 0 6.743-1.912 6.771-4.875.017-1.621-1.02-2.858-3.267-3.873-1.36-.662-2.192-1.102-2.184-1.77 0-.593.706-1.227 2.228-1.227zM44.688 16.815h-3.004c-.933 0-1.627.254-2.037 1.184l-5.773 13.074h4.083s.666-1.758.817-2.143l4.979.006c.116.498.474 2.137.474 2.137h3.607l-3.146-14.258zm-4.795 9.195c.32-.819 1.549-3.987 1.549-3.987-.021.039.317-.825.518-1.362l.262 1.23.901 4.119h-3.23z"/></svg>
+            </a>
+          </li>
+          <li class="payments-list__item">
+              <a class="payments-list__link" href="#">
+                  <svg class="payments-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.428 48.428"><path d="M33.933 9.716a14.433 14.433 0 0 0-9.721 3.748 14.442 14.442 0 0 0-9.717-3.745h-.093C6.444 9.771 0 16.245 0 24.214c0 8.001 6.494 14.494 14.494 14.494 3.737 0 7.145-1.417 9.716-3.745a14.336 14.336 0 0 1-1.482-1.584h2.993a14.492 14.492 0 0 1-1.472 1.553h-.002c-.012.013-.025.021-.037.032a14.44 14.44 0 0 0 9.728 3.749c8.005-.003 14.492-6.495 14.49-14.499v-.007c.001-8.004-6.49-14.493-14.495-14.491zm-11.039 5.245h2.755c.406.492.783 1.01 1.125 1.552h-4.915a21.68 21.68 0 0 1 1.035-1.552zm-1.891 3.074h6.607c.235.502.443 1.021.625 1.553H20.22c.08-.15.36-.754.783-1.553zM5.917 27.906l.879-5.542-1.983 5.542H3.75l-.138-5.542-.939 5.542H1.184l1.234-7.35H4.67l.079 4.51 1.521-4.51h2.443l-1.217 7.35H5.917zm5.265-.012l.051-.587c-.024.003-.494.709-1.583.709-.57 0-1.49-.311-1.49-1.663 0-1.719 1.402-2.289 2.737-2.289.21 0 .663.038.663.038s.051-.105.051-.389c0-.467-.42-.531-.995-.531-1.013 0-1.682.271-1.682.271l.224-1.33s.812-.34 1.869-.34c.547 0 2.12.058 2.12 1.861l-.606 4.25h-1.359zm5.743-1.872c0 2.051-1.987 1.963-2.334 1.963-1.295 0-1.695-.179-1.732-.189l.206-1.35c.002-.012.65.235 1.371.235.416 0 .956-.041.956-.538 0-.744-1.932-.566-1.932-2.333 0-1.559 1.158-2.015 2.3-2.015.882 0 1.424.121 1.424.121l-.195 1.362s-.837-.069-1.054-.069c-.549 0-.848.12-.848.504-.001.772 1.838.394 1.838 2.309zm2.386.538c.137 0 .292-.047.398-.047l-.193 1.311c-.155.043-.594.199-1.157.203-.719.006-1.23-.396-1.23-1.308 0-.612.877-5.655.911-5.688h1.543l-.157.902h.77l-.197 1.453h-.817l-.434 2.677c-.033.213.026.497.563.497zm3.394-4.797c1.694 0 2.201 1.24 2.201 2.257 0 .407-.204 1.407-.204 1.407h-3.136s-.29 1.235 1.367 1.235c.777 0 1.639-.38 1.639-.38l-.272 1.487s-.498.254-1.63.254c-1.227 0-2.666-.519-2.666-2.699.001-1.889 1.149-3.561 2.701-3.561zm4.087 10.123H21.65c-.313-.5-.605-1.013-.856-1.552h6.843a14.886 14.886 0 0 1-.845 1.552zm-.345-3.969h-1.584l.963-5.982h1.437l-.138.867s.512-.943 1.203-.943c.201 0 .298.02.298.02-.205.418-.386.801-.574 1.79-1.072-.38-1.154 1.693-1.605 4.248zm6.035-.093s-.83.212-1.35.212c-1.842 0-2.777-1.271-2.777-3.196 0-2.903 1.733-4.449 3.514-4.449.805 0 1.738.378 1.738.378l-.252 1.635s-.631-.441-1.416-.441c-1.05 0-1.992 1.002-1.992 2.823 0 .897.439 1.733 1.535 1.733.521 0 1.276-.379 1.276-.379l-.276 1.684zm3.715.073l.052-.591c-.025.003-.495.709-1.583.709-.57 0-1.49-.311-1.49-1.663 0-1.719 1.402-2.289 2.736-2.289.21 0 .664.038.664.038s.052-.104.052-.388c0-.467-.42-.531-.996-.531-1.013 0-1.681.271-1.681.271l.224-1.33s.812-.34 1.87-.34c.546 0 2.12.058 2.119 1.861l-.606 4.25c-.001.003-1.361.003-1.361.003zm3.207.02H37.82l.963-5.982h1.438l-.138.867s.513-.943 1.204-.943c.201 0 .297.02.297.02-.204.418-.387.801-.574 1.79-1.073-.38-1.155 1.693-1.606 4.248zm4.729-.016l.067-.551s-.512.646-1.438.646c-1.283 0-1.912-1.239-1.912-2.505 0-1.958 1.178-3.665 2.592-3.665.91.002 1.491.805 1.491.805l.334-2.065 1.547-.003-1.18 7.338h-1.501zm3.052-.207a.461.461 0 0 1-.406.237.471.471 0 0 1-.404-.237.464.464 0 0 1 0-.466.475.475 0 0 1 .404-.236c.08 0 .156.021.23.062a.461.461 0 0 1 .176.64zM47.061 32.117c-.01-.007-.019-.018-.035-.024a.244.244 0 0 0-.08-.009h-.094v.15h.1c.047 0 .078-.004.096-.021a.066.066 0 0 0 .025-.055.075.075 0 0 0-.012-.041z"/><path d="M47.384 32.027a.43.43 0 0 0-.177-.174.472.472 0 0 0-.229-.062.467.467 0 0 0-.23.062.434.434 0 0 0-.176.174.472.472 0 0 0 .408.701.468.468 0 0 0 .404-.701zm-.288.492l-.044-.079a.418.418 0 0 0-.086-.119.11.11 0 0 0-.064-.018h-.047v.215h-.082v-.505h.174c.06 0 .103.005.127.015.027.01.05.024.064.049a.127.127 0 0 1 .023.074.144.144 0 0 1-.039.097.162.162 0 0 1-.105.046.11.11 0 0 1 .043.027.59.59 0 0 1 .075.099l.062.099h-.101zM11.022 25.211c-1.131 0-1.36.508-1.36.931 0 .218.125.582.604.582.929 0 1.122-1.218 1.092-1.477-.044-.009-.072-.035-.336-.036zM22.711 23.144c-.841 0-1.003.957-1.003 1.058h1.713c0-.077.161-1.058-.71-1.058zM43.709 23.311c-.679 0-1.216.788-1.215 1.985 0 .73.26 1.198.816 1.198.836 0 1.239-1.091 1.239-1.904 0-.897-.285-1.279-.84-1.279zM47.115 27.268a.377.377 0 0 0-.146-.145.381.381 0 0 0-.528.145.403.403 0 0 0-.053.195c0 .067.018.133.051.194a.409.409 0 0 0 .339.2c.067 0 .133-.02.193-.054a.388.388 0 0 0 .144-.535zm-.217.452l-.045-.078a.404.404 0 0 0-.084-.118.102.102 0 0 0-.066-.019h-.046v.214h-.084v-.504h.175c.059 0 .103.005.128.016a.143.143 0 0 1 .064.048.116.116 0 0 1 .023.074.136.136 0 0 1-.04.096c-.026.029-.062.041-.104.046.02.008.033.017.043.026a.51.51 0 0 1 .074.099l.062.1h-.1zM36.039 25.211c-1.131 0-1.36.508-1.36.931 0 .218.124.582.604.582.929 0 1.121-1.218 1.092-1.477-.045-.009-.073-.035-.336-.036z"/><path d="M46.864 27.318a.091.091 0 0 0-.034-.025.283.283 0 0 0-.082-.01v.001h-.091v.152h.099c.047 0 .078-.006.097-.021a.078.078 0 0 0 .024-.056.067.067 0 0 0-.013-.041z"/></svg>
+              </a>
+            </li>
+            <li class="payments-list__item">
+                <a class="payments-list__link" href="#">
+                    <svg class="payments-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.409 50.409"><path d="M9.035 20.604a2.043 2.043 0 0 0-.75-.809 3.513 3.513 0 0 0-1.193-.438 9.75 9.75 0 0 0-1.621-.128l-2.867.002a.718.718 0 0 0-.66.524L.015 28.157c-.07.284.117.522.415.522h1.373a.703.703 0 0 0 .659-.522l.471-2.04a.703.703 0 0 1 .658-.521h.393c1.679-.002 2.979-.345 3.913-1.032.939-.688 1.402-1.597 1.402-2.723-.001-.493-.082-.907-.264-1.237zm-2.961 2.745c-.415.304-.992.456-1.736.456h-.336c-.299 0-.482-.236-.417-.524l.413-1.784c.058-.286.359-.523.654-.521l.45-.003c.525 0 .926.091 1.194.267.265.174.398.451.396.818.008.558-.205.987-.618 1.291zM48.175 19.887l-.086.026-.115.016-.141-.022-.072-.07-.033-.11-.002-.165v-.611h.459v-.189h-.459v-.381h-.227v.381h-.154v.189h.154v.711l.106.352.312.112.131-.011.139-.027v-.201zM50.304 18.859l-.328-.135-.242.049-.246.166-.143-.159-.232-.055-.223.049-.211.136v-.148h-.223v1.335h.222V19.1l.187-.116.186-.046.152.027.075.077.033.128.011.165v.763h.223v-.854l-.004-.071-.004-.065.19-.121.188-.047.147.027.08.077.028.129.015.163v.763h.224v-.867zM15.656 21.805c-.518-.292-1.336-.438-2.454-.438-.553 0-1.104.043-1.661.129-.411.063-.451.075-.704.13-.522.114-.604.635-.604.635l-.168.691c-.095.441.159.424.265.387.228-.068.355-.138.821-.242.445-.101.914-.177 1.286-.172.549 0 .969.058 1.249.176.276.12.414.326.414.624l-.024.194-.198.122c-.779.049-1.342.121-2.025.22-.668.093-1.254.256-1.741.479-.523.23-.911.539-1.182.932-.262.395-.393.874-.393 1.436 0 .529.19.966.559 1.304.371.332.861.494 1.447.494.371-.002.658-.031.862-.08l.665-.229.563-.312.518-.342.007.01-.052.22-.003.009v.002c-.056.268.106.488.367.514l.005.006h1.275l.018-.008a.71.71 0 0 0 .591-.514l1.001-4.333.052-.353.024-.331c.004-.614-.261-1.069-.78-1.36zm-2.214 4.872l-.214.282-.54.279a1.923 1.923 0 0 1-.718.155c-.338 0-.603-.049-.782-.149l-.265-.515c0-.279.064-.5.201-.67l.582-.396c.249-.084.553-.155.905-.204.314-.039.934-.11 1.015-.112l.095.167c-.019.095-.195.831-.279 1.163zM40.594 21.811c-.521-.292-1.338-.439-2.453-.439-.553 0-1.105.043-1.66.132-.412.06-.453.073-.707.127-.521.113-.602.636-.602.636l-.168.69c-.094.441.154.421.27.387.229-.068.352-.135.814-.243.443-.1.916-.174 1.289-.172.547 0 .967.059 1.246.177.278.12.414.328.414.623l-.021.193-.196.125c-.787.047-1.351.119-2.027.218-.666.093-1.254.255-1.742.479-.521.231-.914.54-1.182.934-.265.395-.394.873-.394 1.43 0 .533.188.97.562 1.306.373.331.858.497 1.444.497.369-.004.656-.028.861-.081l.663-.226.568-.312.514-.346.009.011-.047.222-.005.004.002.004c-.062.268.101.49.365.514l.002.005h1.274l.021-.007a.703.703 0 0 0 .584-.518l1.004-4.327.053-.355.029-.332c.001-.612-.261-1.065-.784-1.356zm-2.209 4.872l-.223.285-.535.277a1.945 1.945 0 0 1-.715.155c-.349 0-.607-.05-.781-.15l-.268-.513c0-.28.065-.499.196-.672.133-.163.336-.297.588-.395a5.1 5.1 0 0 1 .904-.203c.312-.039.93-.112 1.01-.113l.097.167c-.014.095-.191.828-.273 1.162zM33.969 20.635a2.124 2.124 0 0 0-.756-.812 3.37 3.37 0 0 0-1.193-.438 9.44 9.44 0 0 0-1.615-.126l-2.871.002a.713.713 0 0 0-.655.522l-1.931 8.406c-.07.285.122.521.414.521l1.375-.002a.712.712 0 0 0 .66-.52l.465-2.041a.712.712 0 0 1 .66-.521h.393c1.681 0 2.984-.346 3.922-1.031.927-.693 1.396-1.6 1.396-2.727-.005-.491-.09-.906-.264-1.233zm-2.961 2.749c-.414.298-.992.45-1.732.45h-.342a.411.411 0 0 1-.42-.523l.416-1.781a.698.698 0 0 1 .656-.521l.445-.003c.528.003.924.09 1.194.266.269.176.396.452.399.818.003.558-.204.988-.616 1.294zM45.742 19.85c.063-.287-.117-.52-.412-.516H44.1c-.252 0-.479.187-.59.417l-.068.106-.062.272-1.719 7.814-.056.24.002.006c-.057.257.101.451.345.488l.021.029h1.277c.25 0 .485-.19.592-.424l.066-.1 1.838-8.331-.004-.001zM24.986 21.472c-.325.004-1.646 0-1.646 0-.296 0-.676.239-.864.524 0 0-1.966 3.374-2.157 3.713l-.228-.003-.612-3.687c-.068-.29-.371-.538-.748-.538l-1.23.002c-.296 0-.478.236-.411.524 0 0 .934 5.315 1.121 6.566.087.69-.011.813-.011.813l-1.216 2.118c-.18.288-.083.523.212.523l1.422-.002c.296 0 .685-.233.861-.522l5.47-9.252c0 .001.526-.79.037-.779z"/></svg>
+                </a>
+            </li>
+            <li class="payments-list__item">
+                <a class="payments-list__link" href="#">
+                  <svg class="payments-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.994 511.994"><path d="M98.444 234.941c-4.907-1.131-9.792 1.173-12.01 5.611l-10.667 21.333a10.733 10.733 0 0 0 .448 10.368c1.984 3.158 5.419 5.077 9.109 5.077h10.667c5.888 0 10.667-4.779 10.667-10.667V245.33c0-4.949-3.392-9.258-8.214-10.389zM391.522 248.445l-21.312-21.312c-1.301-1.301-3.008-2.091-4.842-2.603a8.979 8.979 0 0 0-1.323-.277c-.469-.043-.896-.256-1.387-.256h-32c-5.888 0-10.667 4.779-10.667 10.667s4.779 10.667 10.667 10.667h21.333v21.333h-21.333c-5.888 0-10.667 4.779-10.667 10.667s4.779 10.667 10.667 10.667h32c1.408 0 2.795-.277 4.075-.832a10.366 10.366 0 0 0 3.477-2.326l21.312-21.312c4.16-4.16 4.16-10.923 0-15.083z"/><path d="M509.515 313.17l-47.658-57.173 47.637-57.173a10.645 10.645 0 0 0 1.472-11.35 10.625 10.625 0 0 0-9.643-6.144H447.99a10.744 10.744 0 0 0-7.552 3.115l-24.448 24.469-24.448-24.448a10.675 10.675 0 0 0-7.552-3.136H244.877a10.643 10.643 0 0 0-9.152 5.184l-22.848 38.102-22.848-38.102a10.643 10.643 0 0 0-9.152-5.184H74.658a10.684 10.684 0 0 0-9.536 5.888l-64 128a10.733 10.733 0 0 0 .448 10.368 10.71 10.71 0 0 0 9.088 5.077h53.333c4.032 0 7.723-2.283 9.536-5.888l7.701-15.445h4.096v10.667c0 5.888 4.779 10.667 10.667 10.667h85.333c5.163 0 9.472-3.669 10.453-8.555l1.344 2.667a10.66 10.66 0 0 0 9.536 5.888h21.333c4.032 0 7.723-2.283 9.536-5.888l1.344-2.667c.981 4.885 5.29 8.555 10.453 8.555H383.99c2.837 0 5.547-1.131 7.552-3.115l24.448-24.448 24.448 24.448a10.744 10.744 0 0 0 7.552 3.115h53.333a10.68 10.68 0 0 0 9.664-6.144 10.643 10.643 0 0 0-1.472-11.35zm-232.617-3.84h-20.907v-32c0-4.949-3.392-9.258-8.214-10.389-4.885-1.131-9.792 1.173-12.01 5.611l-18.368 36.779h-8.171l-18.368-36.779c-2.219-4.438-7.083-6.742-12.01-5.611-4.8 1.131-8.192 5.44-8.192 10.389v32h-64v-10.667c0-5.888-4.779-10.667-10.667-10.667H74.659a10.684 10.684 0 0 0-9.536 5.888L57.4 309.33H27.896l53.333-106.667h46.762v74.667c0 5.888 4.779 10.667 10.667 10.667s10.667-4.779 10.667-10.667v-74.667h25.515l28.885 48.149c3.84 6.421 14.464 6.421 18.283 0l28.928-48.149h25.963V309.33zm175.509.021v-.021l-28.885-28.885c-4.16-4.16-10.922-4.16-15.083 0l-28.864 28.885h-81.344V202.664h81.344l28.885 28.885c4.16 4.16 10.922 4.16 15.083 0l28.864-28.885h26.155l-38.742 46.507a10.663 10.663 0 0 0 0 13.674l38.742 46.506h-26.155z"/></svg>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="popup__close"></div>
+
+    <div class="popup__title">headphone Baet VIP</div>
+
+    <div class="popup-content">
+      <div class="order-img-block">
+        <img class="order-img-block__img" src="img/multi-icon1.png" alt="Good icon">
+      </div>
+
+      <div class="order-content order-content--helper">
+        <div class="category">Headphone</div>
+
+        <div class="order-content__title">Beat Phone VIP Chronograph Watch</div>
+
+        <div class="order-content__price">price: 
+          <span class="order-content__span">$450.00</span>
+        </div>
+
+        <form class="popup-form" action="sendmail.php" data-them="Тема" data-hide=".popup, .popup-background" data-show=".thank-popup" method="post">
+          <input class="popup-form__input" type="text" placeholder="+7(900)500-70-70" name="phone" data-name="Телефон: " data-required>
+          <input type="hidden" name="popup-title" data-name="Заголовок: ">
+          <input type="hidden" name="popup-price" data-name="Цена: ">
+          <button class="popup-form__button" type="submit">Buy now<i class="popup-form__icon"></i></button>       
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup-background"></div>
+
+  <div class="thank-popup">
+    <div class="thank-popup__message">Ваше сообшение отправлено!</div>
+  </div>
+
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/kinetic.js"></script>
+  <script src="js/jquery.final-countdown.js"></script>
+  <script src="js/jquery.sendFormLP.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
