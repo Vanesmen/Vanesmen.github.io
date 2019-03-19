@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <header class="header">
+                <div class="container box-flex">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img class="logo-img" src="img/logo.svg" alt="Лого">Bran<span class="logo-span">d</span>
+                        </a>
+                    </div>
+
+                    <form class="form" action="#" method="post">
+                        <div class="form__button-wrapper">
+                            <button class="form__dropdown-button" type="button">Browse<i class="fas fa-caret-down form__caret-down"></i></button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-menu-link">Women</a>
+                                <ul class="dropdown-list dropdown-list--bottom">
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Dresses</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Blazers</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Denim</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Leggings/Pants</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Skirts/Shorts</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Accessories</a></li>
+                                </ul>
+                                <a href="#" class="dropdown-menu-link">Men</a>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tees/Tank
+                                            tops</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Shirts/Polos</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweatshirts/Hoodies</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Blazers</a></li>
+                                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/vests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input class="form__input" type="search" name="search" placeholder="Search for Item..."
+                            autofocus required pattern="\S+[А-яа-я]">
+                        <button class="form__search-button" type="submit"><i class="fas fa-search form__search-icon"></i></button>
+                    </form>
+
+                    <div class="user-account">
+
+                        <div class="user-account__wrapper user-account__wrapper--hover">
+                            <a class="user-account__basket-link" href="#"><img class="user-account__basket-img" width="31"
+                                    height="29" src="img/basket-icon.svg" alt="Корзина"></a>
+
+                            <div class="user-account__box">
+                                <div class="dropdown-menu dropdown-menu--basket-icon">
+                                    <div class="product">
+                                        <div class="product__img">
+                                            <img src="img/t-short.jpg" alt="Товар">
+                                        </div>
+                                        <div class="product__about">
+                                            <p class="product__title">Rebox Zane</p>
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="product__price">1 x $250</p>
+                                        </div>
+                                        <a class="product__icon-link" href="#"><i class="fas fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="product">
+                                        <div class="product__img">
+                                            <img src="img/trousers.jpg" alt="Товар">
+                                        </div>
+                                        <div class="product__about">
+                                            <p class="product__title">Rebox Zane</p>
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <p class="product__price">1 x $250</p>
+                                        </div>
+                                        <a class="product__icon-link" href="#"><i class="fas fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="total">
+                                        <span>Total</span>
+                                        <span>$500.00</span>
+                                    </div>
+                                    <a class="cart-link cart-link--color" href="#">Checkout</a>
+                                    <a class="cart-link" href="#">Go to cart</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="user-account__button" type="button">My Account<i class="fas fa-caret-down user-account__caret-down"></i></button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <div class="navbar-button">
+                        <button class="navbar-button__nav" type="button" data-target="#navbar-menu">
+                            <span class="navbar-button__line"></span>
+                            <span class="navbar-button__line"></span>
+                            <span class="navbar-button__line"></span>
+                        </button>
+                    </div>
+                    <ul class="navbar-menu navbar-menu--flex" id="navbar-menu">
+                        <li>
+                            <a class="navbar-menu__link" href="index.html">Home</a>
+                        </li>
+                        <li class="navbar-menu__item--hover">
+                            <a class="navbar-menu__link" href="product.html">Man</a>
+                            <div class="dropdown-menu dropdown-menu--navbar dropdown-menu--man-after">
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Man</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">T-shirt</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Blazers</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Denim</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Leggings/Pants</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Skirts/Shorts</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Man</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">T-shirt</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    </ul>
+                                    <a href="#" class="dropdown-menu-link">Man</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">T-shirt</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Man</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">T-shirt</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    </ul>
+                                    <a href="#" class="dropdown-img">
+                                        <img src="img/super-sale.jpg" alt="Распродажа" width="255" height="118">
+                                        <span class="dropdown-text">Super<br>Sale!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--hover">
+                            <a class="navbar-menu__link" href="shopping-cart.html">Women</a>
+                            <div class="dropdown-menu dropdown-menu--navbar dropdown-menu--women-after">
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Woman</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Dresses</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Blazers</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Denim</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Leggings/Pants</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Skirts/Shorts</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Woman</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Dresses</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    </ul>
+                                    <a href="#" class="dropdown-menu-link">Woman</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Dresses</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Woman</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Dresses</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    </ul>
+                                    <a href="#" class="dropdown-img">
+                                        <img src="img/super-sale.jpg" alt="Распродажа" width="255" height="118">
+                                        <span class="dropdown-text">Super<br>Sale!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__active navbar-menu__item--hover">
+                            <span class="navbar-menu__link">Kids</span>
+                            <div class="dropdown-menu dropdown-menu--navbar dropdown-menu--kids-after">
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Kids</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Shoes</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Blazers</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Denim</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Leggings/Pants</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Skirts/Shorts</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Kids</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Shoes</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    </ul>
+                                    <a href="#" class="dropdown-menu-link">Kids</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Shoes</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-wrapper">
+                                    <a href="#" class="dropdown-menu-link">Kids</a>
+                                    <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Shoes</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Tops</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Sweaters/Knits</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Jackets/Coats</a></li>
+                                    </ul>
+                                    <a href="#" class="dropdown-img">
+                                        <img src="img/super-sale.jpg" alt="Распродажа" width="255" height="118">
+                                        <span class="dropdown-text">Super<br>Sale!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Accoseriese</a></li>
+                        <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Featured</a></li>
+                        <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Hot Deals</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="new-arrivals">
+                <div class="container">
+                    <div class="arrivals">
+                        <h2 class="arrivals__title">New Arrivals</h2>
+                        <ul class="arrivals__breadcrumbs">
+                            <li>
+                                <a class="arrivals__breadcrumbs-link" href="#">Home</a>
+                                <span class="arrivals__breadcrumbs-span">/</span>
+                            </li>
+                            <li>
+                                <a class="arrivals__breadcrumbs-link" href="#">Men</a>
+                                <span class="arrivals__breadcrumbs-span">/</span>
+                            </li>
+                            <li>
+                                <a class="arrivals__breadcrumbs-link arrivals__breadcrumbs-link--active" href="#">New
+                                    Arrivals</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="accordion">
+                <div class="container">
+                    <ol class="accordion-list">
+                        <li class="accordion-list__item">
+                            <div class="accordion-list__title">
+                                <span class="accordion-list__number">01.</span>
+                                Shipping Adres
+                            </div>
+
+                            <form class="accordion-box" action="#" method="post">
+                                <div class="accordion-info">
+
+                                    <div class="accordion-text">
+                                        Check as a guest or register
+                                        <span class="accordion-span">Register with us for future convenience</span>
+                                    </div>
+
+                                    <div class="accordion-radio">
+                                        <label class="accordion-radio__label">
+                                            Checkout as guest
+                                            <input class="accordion-radio__input" type="radio" name="radio">
+                                            <span class="accordion-radio__indicator"></span>
+                                        </label>
+                                        <label class="accordion-radio__label">
+                                            Register
+                                            <input class="accordion-radio__input" type="radio" name="radio" checked>
+                                            <span class="accordion-radio__indicator"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="accordion-text">
+                                        Regisetr and save time!
+                                        <span class="accordion-span">Register with us for future convenience</span>
+                                    </div>
+
+                                    <div class="accordion-feature">
+                                        <p class="accordion-feature__text">Fast and easy checkout</p>
+                                        <p class="accordion-feature__text">Easy access to your order history and status</p>
+                                    </div>
+
+                                    <a class="accordion-info__button" href="#">Continue</a>
+                                </div>
+
+                                <div class="accordion-list__register-form">
+                                    <div class="accordion-text">
+                                        Already registed
+                                        <span class="accordion-span">Please log ing below</span>
+                                    </div>
+
+                                    <label class="accordion-label">
+                                        <span class="accordion-label__text">Email Address
+                                            <sup class="accordion-label__importantly">*</sup>
+                                        </span>
+                                        <input class="accordion-label__input" type="email" required pattern="\S+@[a-z]+.[a-z]+">
+                                    </label>
+
+                                    <label class="accordion-label">
+                                        <span class="accordion-label__text">Password
+                                            <sup class="accordion-label__importantly">*</sup>
+                                        </span>
+                                        <input class="accordion-label__input" type="password" minlength="6" maxlength="20">
+                                    </label>
+
+                                    <p class="accordion-list__required">
+                                        <sup class="accordion-list__importantly">*</sup>
+                                        Required Fields
+                                    </p>
+
+                                    <button class="accordion-list__button" type="submit">Log in</button>
+                                    <a href="#" class="accordion-list__link">Forgot Password?</a>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="accordion-list__item">
+                            <div class="accordion-list__title accordion-list__title--two">
+                                <span class="accordion-list__number">02.</span>
+                                Billing Information
+                            </div>
+                        </li>
+                        <li class="accordion-list__item">
+                            <div class="accordion-list__title accordion-list__title--three">
+                                <span class="accordion-list__number">03.</span>
+                                Shipping Information
+                            </div>
+                        </li>
+                        <li class="accordion-list__item">
+                            <div class="accordion-list__title accordion-list__title--four">
+                                <span class="accordion-list__number">04.</span>
+                                Shipping Method
+                            </div>
+                        </li>
+                        <li class="accordion-list__item">
+                            <div class="accordion-list__title accordion-list__title--four">
+                                <span class="accordion-list__number">05.</span>
+                                Payment Method
+                            </div>
+                        </li>
+                        <li class="accordion-list__item">
+                            <div class="accordion-list__title accordion-list__title--five">
+                                <span class="accordion-list__number">06.</span>
+                                Order Review
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="slider-form">
+                <div class="container box-flex">
+                    <div class="slider-box">
+                        <div class="slider">
+                            <blockquote class="slide">
+                                <div class="slide__bg-img"></div>
+                                <div class="slide__content">
+                                    <p class="slide__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                                        pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                                    <cite class="slide__name">Bin Burhan<br><span class="slide__span">Dhaka, Bd</span></cite>
+                                </div>
+                            </blockquote>
+
+                            <!--<blockquote class="slide">-->
+                            <!--<img class="slide__img" src="img/face.jpg" alt="Человек">-->
+                            <!--<p class="slide__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>-->
+                            <!--<cite class="slide__name">Bin Burhan <span class="slide__span">Dhaka, Bd</span></cite>-->
+                            <!--</blockquote>-->
+
+                            <!--<blockquote class="slide">-->
+                            <!--<img class="slide__img" src="img/face.jpg" alt="Человек">-->
+                            <!--<p class="slide__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>-->
+                            <!--<cite class="slide__name">Bin Burhan <span class="slide__span">Dhaka, Bd</span></cite>-->
+                            <!--</blockquote>-->
+                        </div>
+
+                        <div class="toggles">
+                            <span class="slider__toggles slider__toggles--active"></span>
+                            <span class="slider__toggles"></span>
+                            <span class="slider__toggles"></span>
+                        </div>
+                    </div>
+
+                    <div class="subscribe">
+                        <h3 class="subscribe__title">Subscribe</h3>
+                        <p class="subscribe__text">For our newletter and promotion</p>
+                        <form class="form-subscribe" action="#" method="post">
+                            <input class="form-subscribe__input" type="email" placeholder="Enter Your Email" required
+                                pattern="\S+@[a-z]+.[a-z]+">
+                            <button class="form-subscribe__button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <section class="info">
+                <div class="container box-flex">
+                    <div class="info-about">
+                        <div class="info-about__logo-box">
+                            <a href="index.html" class="logo-link info-about__logo">
+                                <img class="logo-img" src="img/logo.svg" alt="Лого"><span class="info-about__logo-text">Bran<span
+                                        class="logo-span">d</span></span>
+                            </a>
+                        </div>
+                        <p class="info-about__text">Objectively transition extensive data rather than cross functional
+                            solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                            Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                        <p class="info-about__text info-about__text--margin-none">Efficiently plagiarize 24/365 action
+                            items and focused infomediaries. Distinctively seize superior initiatives for wireless
+                            technologies. Dynamically optimize.</p>
+                    </div>
+
+                    <div class="info-nav">
+                        <h3 class="info-nav__title">Company</h3>
+                        <nav>
+                            <ul class="info-list">
+                                <li class="info-list__item"><a class="info-list__link" href="#">Home</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Shop</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">About</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">How It Works</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="info-nav info-nav--margin">
+                        <h3 class="info-nav__title">Information</h3>
+                        <nav>
+                            <ul class="info-list">
+                                <li class="info-list__item"><a class="info-list__link" href="#">Tearms & Condition</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Privacy Policy</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">How to Buy</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">How to Sell</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Promotion</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="info-nav">
+                        <h3 class="info-nav__title">Shop Category</h3>
+                        <nav>
+                            <ul class="info-list">
+                                <li class="info-list__item"><a class="info-list__link" href="#">Men</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Women</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Child</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Apparel</a></li>
+                                <li class="info-list__item"><a class="info-list__link" href="#">Brows All</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container footer--flex">
+                <small class="copyright">© 2017 Brand All Rights Reserved.</small>
+                <ul class="socials-list">
+                    <li class="socials-list__item"><a class="socials-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-list__link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-list__link" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li class="socials-list__item"><a class="socials-list__link" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
